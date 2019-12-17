@@ -22,5 +22,10 @@ import org.springframework.web.servlet.ModelAndView;
             return new ModelAndView("lista.html");
         }
 
+        @RequestMapping("/lembretes/cadastro/inserir")
+        public String inserir(lembrete lembrete){
+            return "->" + lembrete.getNome() + ">>" + lembrete.getDescricao();
+        }
+
     }
     
